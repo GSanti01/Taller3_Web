@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Autos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link" href="carrcss.html">HTML y CSS</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Bootstrap</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="carpure.html">Otro Framework</a>
+        </li>
+    </ul>
+    
+    <div class="container mt-5">
+        <h1 class="text-center">Registro de Autos</h1>
+        <form action="#" method="post">
+            <div class="mb-3">
+                <label for="id_pais" class="form-label">País:</label>
+                <select class="form-select" id="id_pais" name="id_pais">
+                    <option value="Pais" selected>Pais</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Ecuador">Ecuador</option>
+                    <option value="México">México</option>
+                    <option value="Perú">Perú</option>
+                    <option value="Venezuela">Venezuela</option>
+                   
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="id_movidoa" class="form-label">Tipo de Combustible:</label>
+                <select class="form-select" id="id_movidoa" name="id_movidoa">
+                    <option value="Combustible" selected>Combustible</option>
+                    <option value="Gasolina">Gasolina</option>
+                    <option value="Diésel">Diésel</option>
+                    
+                </select>
+            </div>
+            
+            
+            <div class="mb-3">
+                <label for="usuario" class="form-label">Usuario:</label>
+                <input type="text" class="form-control" id="usuario" name="usuario" required>
+            </div>
+
+            
+            <div class="mb-3">
+                <label for="id_estado" class="form-label">Estado:</label>
+                <select class="form-select" id="id_estado" name="id_estado">
+                    <option value="Estado" selected>Estado</option>
+                    <option value="Nuevo">Nuevo</option>
+                    <option value="Usado">Usado</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="id_marca" class="form-label">Marca:</label>
+                <select class="form-select" id="id_marca" name="id_marca">
+                    <option value="Marca" selected>Marca</option>
+                    <option value="Toyota">Toyota</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Chevrolet">Chevrolet</option>
+                    <option value="Ford">Ford</option>
+                    <option value="Nissan">Nissan</option>
+                    
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="id_tipocoche" class="form-label">Tipo de Coche:</label>
+                <select class="form-select" id="id_tipocoche" name="id_tipocoche">
+                    <option value="Año del modelo" selected>Año del modelo</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                   
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="cc_pic" class="form-label">Descripción del Carro:</label>
+                <textarea class="form-control" id="cc_pic" name="cc_pic" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Registrar</button>
+        </form>
+    </div>
+</body>
+</html>
