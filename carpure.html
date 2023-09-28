@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Autos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/2.0.3/pure-min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .pure-g {
+            margin: 0;
+        }
+
+        .pure-form-stacked {
+            padding: 20px;
+        }
+
+        .pure-button-primary {
+            background-color: #0078e7;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .pure-button-primary:hover {
+            background-color: #0056b3;
+        }
+
+        select,
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link" href="carrcss.html">HTML y CSS</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="carbootstrap.html">Bootstrap</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Otro Framework</a>
+        </li>
+    </ul>
+
+    <div class="container">
+        <h1 class="text-center">Registro de Autos</h1>
+        <form class="pure-form pure-form-stacked" action="#" method="post">
+            <fieldset>
+                <label for="id_pais">País:</label>
+                <select id="id_pais" name="id_pais">
+                    <option value="Pais" selected>Pais</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Ecuador">Ecuador</option>
+                    <option value="México">México</option>
+                    <option value="Perú">Perú</option>
+                    <option value="Venezuela">Venezuela</option>
+                </select>
+
+                <label for="id_movidoa">Tipo de Combustible:</label>
+                <select id="id_movidoa" name="id_movidoa">
+                    <option value="Combustible" selected>Combustible</option>
+                    <option value="Gasolina">Gasolina</option>
+                    <option value="Diésel">Diésel</option>
+                </select>
+
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" name="usuario" required>
+
+                <label for="id_estado">Estado:</label>
+                <select id="id_estado" name="id_estado">
+                    <option value="Estado" selected>Estado</option>
+                    <option value="Nuevo">Nuevo</option>
+                    <option value="Usado">Usado</option>
+                </select>
+
+                <label for="id_marca">Marca:</label>
+                <select id="id_marca" name="id_marca">
+                    <option value="Marca" selected>Marca</option>
+                    <option value="Toyota">Toyota</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Chevrolet">Chevrolet</option>
+                    <option value="Ford">Ford</option>
+                    <option value="Nissan">Nissan</option>
+                </select>
+
+                <label for="id_tipocoche">Tipo de Coche:</label>
+                <select id="id_tipocoche" name="id_tipocoche">
+                    <option value="Año del modelo" selected>Año del modelo</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                </select>
+
+                <label for="cc_pic">Descripción del Carro:</label>
+                <textarea id="cc_pic" name="cc_pic" rows="4"></textarea>
+
+                <button type="submit" class="pure-button pure-button-primary">Registrar</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
